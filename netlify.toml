@@ -8,3 +8,9 @@
  from = "/api/*"
  to = "/.netlify/functions/get-avatar/:splat"
  status = 200
+
+
+[[redirects]]
+ from = "/test/*"
+ to = "https://google.com/?q=:splat"
+ status = 200
