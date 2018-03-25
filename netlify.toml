@@ -18,8 +18,3 @@
  from = "/large/*"
  to = "/.netlify/functions/get-avatar?size=large&user=:splat"
  status = 200
-
-[[redirects]]
- from = "/test/*"
- to = "https://www.google.co.uk/?q=:splat"
- status = 200
