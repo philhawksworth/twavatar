@@ -5,8 +5,18 @@
   NODE_ENV = "8.9.0"
 
 [[redirects]]
- from = "/api/*"
- to = "/.netlify/functions/get-avatar?user=:splat"
+ from = "/small/*"
+ to = "/.netlify/functions/get-avatar?size=50&user=:splat"
+ status = 200
+
+[[redirects]]
+ from = "/mid/*"
+ to = "/.netlify/functions/get-avatar?size=200&user=:splat"
+ status = 200
+
+[[redirects]]
+ from = "/large/*"
+ to = "/.netlify/functions/get-avatar?size=400&user=:splat"
  status = 200
 
 
