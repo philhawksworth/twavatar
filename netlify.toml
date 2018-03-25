@@ -8,4 +8,4 @@
 [[redirects]]
  from = "/api/*"
  to = "/.netlify/functions/get-avatar/:splat"
- response = "200"
+ response = "200!"

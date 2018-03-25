@@ -15,8 +15,3 @@ https://twavatar.netlify.com/{size}/{handle}
 size: [small | medium | large]
 handle: [ @philhawksworth | philhawksworth ]
 ```
-
-{% if init.environment == false %}
-  {% include "setup-hint.njk" -%}
-{% endif %}
-
