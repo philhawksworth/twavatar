@@ -5,7 +5,7 @@ const request = require('request');
 
 export function handler(event, context, callback) {
 
-  var username = event.path.replace("/get-avatar","");
+  var username = event.path.replace("/.netlify/functions/get-avatar/","");
 
   console.log("Username: ", username);
 
