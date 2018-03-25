@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn run build && yarn run watch",
+    "css": "gulp scss",
     "build": "gulp build && yarn run build:functions",
     "build:functions": "netlify-lambda build src/lambda",
     "watch": "gulp watch & gulp serve"

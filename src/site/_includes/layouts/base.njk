@@ -8,7 +8,18 @@
   </head>
   <body>
     <div class="container">
-    {{ content | safe }}
+      <header>
+        <ul class="nav">
+          <li>
+            <a href="/">home<small>where the heart is</small></a>
+          </li>
+          <li>
+            <a href="/deploy">deploy<small>one of your own</small></a>
+          </li>
+        </ul>
+      </header>
+      {{ content | safe }}
+      {% include "footer.njk" %}
     </div>
   </body>
 </html>

@@ -3,15 +3,17 @@ title: Twavatar
 layout: layouts/base.njk
 ---
 
-# Twavatar
+# Quick twitter avatars from twavatar
 
-An API to grab twitter avatars with just their twitter handle.
+An API to grab Twitter avatars with just their twitter handle. Built as a [JAMstack](https://jamstack.org) site and served on [Netlify](https://netlify.com), with a sprinkling of serverless functions via [Netlify Functions](https://www.netlify.com/blog/2018/03/20/netlifys-aws-lambda-functions-bring-the-backend-to-your-frontend-workflow/)
 
 ## Usage
 
 ```
-https://twavatar.netlify.com/{size}/{handle}
+// get the URL for the avatar of any twitter user by requesting:
+https://twavatar.netlify.com/[small|mid|large]/{handle}
 
-size: [small | medium | large]
-handle: [ @philhawksworth | philhawksworth ]
+// for example
+https://twavatar.netlify.com/large/philhawksworth
+
 ```
