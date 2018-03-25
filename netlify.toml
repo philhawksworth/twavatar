@@ -12,5 +12,5 @@
 
 [[redirects]]
  from = "/test/*"
- to = "https://google.com/?q=:splat"
+ to = "https://www.google.co.uk/?q=:splat"
  status = 200
