@@ -6,7 +6,7 @@
 
 [[redirects]]
  from = "/api/*"
- to = "/.netlify/functions/get-avatar/:splat"
+ to = "/.netlify/functions/get-avatar?user=:splat"
  status = 200
 
 

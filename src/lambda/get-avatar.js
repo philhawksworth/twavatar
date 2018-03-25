@@ -5,11 +5,7 @@ const request = require('request');
 
 export function handler(event, context, callback) {
 
-  var username = event.path.replace("/.netlify/functions/get-avatar/","");
-
-  console.log("Username: ", username);
-
-  request('https://mobile.twitter.com/' + username, function(err, response, body){
+  request('https://mobile.twitter.com/' + event.queryStringParameters['user'], function(err, response, body){
 
     // format the response to be a bit mor concise and return it to the client
     if(!err && response.statusCode === 200){
