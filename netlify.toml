@@ -7,5 +7,5 @@
 
 [[redirects]]
  from = "/api/*"
- to = "/.netlify/functions/get-avatar/:splat"
+ to = "https://twavatar.netlify/.com/.netlify/functions/get-avatar/:splat"
  status = 200
