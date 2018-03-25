@@ -6,17 +6,17 @@
 
 [[redirects]]
  from = "/small/*"
- to = "/.netlify/functions/get-avatar?size=50&user=:splat"
+ to = "/.netlify/functions/get-avatar?size=small&user=:splat"
  status = 200
 
 [[redirects]]
  from = "/mid/*"
- to = "/.netlify/functions/get-avatar?size=200&user=:splat"
+ to = "/.netlify/functions/get-avatar?size=medium&user=:splat"
  status = 200
 
 [[redirects]]
  from = "/large/*"
- to = "/.netlify/functions/get-avatar?size=400&user=:splat"
+ to = "/.netlify/functions/get-avatar?size=large&user=:splat"
  status = 200
 
 
