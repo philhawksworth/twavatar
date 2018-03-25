@@ -4,8 +4,7 @@
   publish = "dist"
   NODE_ENV = "8.9.0"
 
-
 [[redirects]]
- from = "/api"
- to = "/.netlify/functions/get-avatar/philhawksworth"
+ from = "/api/*"
+ to = "/.netlify/functions/get-avatar/:splat"
  status = 200
