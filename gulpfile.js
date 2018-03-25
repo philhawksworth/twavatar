@@ -13,6 +13,24 @@ var config      = require('dotenv').config()
 var buildSrc = "src";
 var buildDest = "dist";
 
+// cleanup the build output
+gulp.task('init', function () {
+  // Look for the environment variables
+  if(process.env.URL) {
+    var siteEnv = {"rootURL" : process.env.URL};
+  } else {
+    var siteEnv = {"rootURL" : "https://twavatar.netlify.com"};
+  }
+
+  // save the status of our environment somewhere that our SSG can access it
+  fs.writeFile(buildSrc + "/site/_data/site.json", JSON.stringify(siteEnv), function(err) {
+    if(err) {
+      console.log(err);
+    }
+  });
+});
+
+
 
 // cleanup the build output
 gulp.task('clean-build', function () {
@@ -62,7 +80,7 @@ gulp.task("watch", ['build'], function () {
 */
 gulp.task('build', function(callback) {
   runSequence(
-    'clean-build',
+    ['clean-build','init'],
     ['generate', 'scss'],
     callback
   );
