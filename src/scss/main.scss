@@ -42,9 +42,9 @@ body {
   width: 90%;
   text-align: left;
 
-  // @include bp(mid) {
-  //   width: 70%;
-  // }
+  @include bp(mid) {
+    width: 600px;
+  }
   @include bp(wide) {
     width: 700px;
   }
