@@ -151,6 +151,7 @@ pre {
   font-size: 0.8em;
   background-color: $page-color;
   border: solid 1px mix($accent-color, $page-color, 30%);
+  overflow: auto;
 }
 
 

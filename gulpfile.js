@@ -69,7 +69,7 @@ gulp.task('generate', shell.task('eleventy --config=eleventy.js'));
 /*
   Watch src folder for changes
 */
-gulp.task("watch", ['build'], function () {
+gulp.task("watch", function () {
   gulp.watch(buildSrc + "/**/*", ["build"])
 });
 
