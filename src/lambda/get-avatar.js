@@ -6,13 +6,14 @@ const request = require('request');
 export function handler(event, context, callback) {
 
   // grab the parameters from the request
-  var size = event.queryStringParameters['size'];
-  var user = event.queryStringParameters['user'];
+//   var size = event.queryStringParameters['size'];
+//   var user = event.queryStringParameters['user'];
+  
+  const { size, user } = event.queryStringParameters;
 
   // transform the size parameter into the image URL pattern needed in the request
   var option = {
     "small" : "_normal",
-    "medium" : "_96",
     "large" : "_400x400"
   };
 
