@@ -26,7 +26,7 @@ export function handler(event, context, callback) {
       const avatar = ($('.avatar img').attr('src') || '').replace('_normal', option[size]);
       return callback(null, {
           statusCode: 200,
-          headers: {"Content-Type": "application/json"},
+          headers: {"Content-Type": "text/plain"},
           body: avatar
         })
       } else {
