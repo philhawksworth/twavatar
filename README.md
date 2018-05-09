@@ -9,7 +9,7 @@ An API to grab Twitter avatars with just their twitter handle. Built as a [JAMst
 
 ```
 // get the URL for the avatar of any twitter user by requesting:
-https://twavatar.netlify.com/[small|mid|large]/{handle}
+https://twavatar.netlify.com/{small|large}/{handle}
 
 // for example
 https://twavatar.netlify.com/large/philhawksworth
