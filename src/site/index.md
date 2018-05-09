@@ -11,7 +11,7 @@ An API to grab Twitter avatars with just their twitter handle. Built as a [JAMst
 
 ```
 // get the URL for the avatar of any twitter user by requesting:
-{{ site.rootURL }}/[small|mid|large]/{handle}
+{{ site.rootURL }}/{small|large}/{handle}
 
 // for example
 {{ site.rootURL }}/large/philhawksworth
