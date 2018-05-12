@@ -4,6 +4,7 @@
   "description": "A simple twitter avatar grabber built on the jamstack",
   "author": "Phil Hawksworth",
   "license": "MIT",
+  "main": "gulpfile.js",
   "scripts": {
     "start": "yarn run build && yarn run watch",
     "css": "gulp scss",
