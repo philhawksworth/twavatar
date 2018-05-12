@@ -2,7 +2,6 @@
   "name": "twavatar",
   "version": "1.0.0",
   "description": "A simple twitter avatar grabber built on the jamstack",
-  "main": "index.js",
   "author": "Phil Hawksworth",
   "license": "MIT",
   "scripts": {
