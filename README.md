@@ -2,6 +2,8 @@
 
 https://twavatar.netlify.com
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9cf74222-c89a-454c-be61-4a076a702479/deploy-status)](https://app.netlify.com/sites/twavatar/deploys)
+
 
 An API to grab Twitter avatars with just their twitter handle. Built as a [JAMstack](https://jamstack.org) site and served on [Netlify](https://netlify.com), with a sprinkling of serverless functions via [Netlify Functions](https://www.netlify.com/blog/2018/03/20/netlifys-aws-lambda-functions-bring-the-backend-to-your-frontend-workflow/)
 
