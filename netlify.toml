@@ -1,5 +1,5 @@
 [build]
-  Functions = "src/lambda"
+  functions = "src/lambda"
   command = "yarn run build"
   publish = "dist"
   NODE_ENV = "8.9.0"
